@@ -5,11 +5,11 @@ Arquivo com os dados enviados no postback.
 Para configurar o postback:
 - Faça login na OctaPay, vá em Ferramentas > Postback
 - Depois clique em cadastrar
--- No modal que se abrir:
--- Selecione o produto
--- Digite a url que irá receber o postback
--- Marque os status que quer receber
--- Depois clique em salvar
+* No modal que se abrir:
+* Selecione o produto
+* Digite a url que irá receber o postback
+* Marque os status que quer receber
+* Depois clique em salvar
 
 Para verificar se sua url está funcionando clique no botão de testar e veja o resultado.
 
