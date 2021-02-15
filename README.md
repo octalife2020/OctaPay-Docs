@@ -141,3 +141,5 @@ Exemplo de retorno:
 @$_POST['data_criacao'] = '2021-02-15 08:54:49';
 @$_POST['data_atualizacao'] = '2021-02-15 08:54:49';
 ```
+
+Link documentação com imagens: <a href="https://octapay.com.br/documentacao-postback-octapay/">https://octapay.com.br/documentacao-postback-octapay/</a>
