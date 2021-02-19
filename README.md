@@ -68,7 +68,68 @@ Exemplo com a linguagem php
 @$_POST["data_criacao"];  
 @$_POST["data_atualizacao"];  
 ```
+Exemplo com a linguagem php em formato JSON
+```
+$str_json = file_get_contents( 'php://input' );
+$dados = json_decode($str_json);
 
+
+@$dados->chave_unica;
+
+
+@$dados->transacao;
+@$dados->nome_produto;
+@$dados->codigo_produto;
+@$dados->valor_produto;
+@$dados->nome_plano;
+@$dados->codigo_plano;
+@$dados->valor_plano;
+@$dados->itens_plano;
+
+
+@$dados->nome_comprador;
+@$dados->telefone_comprador;
+@$dados->email_comprador;
+@$dados->cpf_cnpj_comprador;
+@$dados->cep_comprador;
+@$dados->rua_comprador;
+@$dados->numero_comprador;
+@$dados->complemento_comprador;
+@$dados->bairro_comprador;
+@$dados->cidade_comprador;
+@$dados->estado_comprador;
+@$dados->pais_comprador;
+
+
+@$dados->nome_produtor;
+@$dados->telefone_produtor;
+@$dados->email_produtor;
+@$dados->cpf_cnpj_produtor;
+
+
+@$dados->nome_afiliado;
+@$dados->telefone_afiliado;
+@$dados->email_afiliado;
+@$dados->cpf_cnpj_afiliado;
+
+
+@$dados->forma_pagamento;
+@$dados->status_transacao;
+@$dados->status_transacao_codigo;
+@$dados->url_checkout;
+@$dados->link_boleto;
+@$dados->valor_bruto;
+@$dados->valor_frete;
+@$dados->valor_desconto;
+@$dados->valor_liquido;
+@$dados->parcelas;
+@$dados->data_vencimento_boleto;
+@$dados->data_pedido;
+@$dados->data_finalizada;
+@$dados->data_ultimo_evento;
+@$dados->data_criacao;
+@$dados->data_atualizacao;
+```
 Status da Transação:
 
 ```
