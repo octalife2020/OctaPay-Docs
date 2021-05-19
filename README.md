@@ -185,6 +185,7 @@ Exemplo de retorno:
 @$_POST['cpf_cnpj_afiliado'] = '12345678901';
 
 
+// CARTÃO DE CRÉDITO, BOLETO, PIX
 @$_POST['forma_pagamento'] = 'BOLETO';
 @$_POST['status_transacao'] = 'Paga';
 @$_POST['status_transacao_codigo'] = '4';
