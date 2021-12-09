@@ -28,6 +28,16 @@ Exemplo com a linguagem php
 @$_POST["valor_plano"];  
 @$_POST["itens_plano"];  
 
+@$_POST["plano_adicional1"]["nome"];
+@$_POST["plano_adicional1"]["codigo"];
+@$_POST["plano_adicional1"]["itens"];
+@$_POST["plano_adicional1"]["valor"];
+
+@$_POST["plano_adicional2"]["nome"];
+@$_POST["plano_adicional2"]["codigo"];
+@$_POST["plano_adicional2"]["itens"];
+@$_POST["plano_adicional2"]["valor"];
+
 @$_POST["nome_comprador"];  
 @$_POST["telefone_comprador"];  
 @$_POST["email_comprador"];  
@@ -86,6 +96,15 @@ $dados = json_decode($str_json);
 @$dados->valor_plano;
 @$dados->itens_plano;
 
+@$dados->plano_adicional1->nome;
+@$dados->plano_adicional1->codigo;
+@$dados->plano_adicional1->itens;
+@$dados->plano_adicional1->valor;
+
+@$dados->plano_adicional2->nome;
+@$dados->plano_adicional2->codigo;
+@$dados->plano_adicional2->itens;
+@$dados->plano_adicional2->valor;
 
 @$dados->nome_comprador;
 @$dados->telefone_comprador;
