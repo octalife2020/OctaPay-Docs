@@ -83,9 +83,7 @@ Exemplo com a linguagem php em formato JSON
 $str_json = file_get_contents( 'php://input' );
 $dados = json_decode($str_json);
 
-
 @$dados->chave_unica;
-
 
 @$dados->transacao;
 @$dados->nome_produto;
@@ -119,18 +117,15 @@ $dados = json_decode($str_json);
 @$dados->estado_comprador;
 @$dados->pais_comprador;
 
-
 @$dados->nome_produtor;
 @$dados->telefone_produtor;
 @$dados->email_produtor;
 @$dados->cpf_cnpj_produtor;
 
-
 @$dados->nome_afiliado;
 @$dados->telefone_afiliado;
 @$dados->email_afiliado;
 @$dados->cpf_cnpj_afiliado;
-
 
 @$dados->forma_pagamento;
 @$dados->status_transacao;
@@ -177,6 +172,15 @@ Exemplo de retorno:
 @$_POST['valor_plano'] = '37.00';
 @$_POST['itens_plano'] = '1';
 
+@$_POST["plano_adicional1"]["nome"];
+@$_POST["plano_adicional1"]["codigo"];
+@$_POST["plano_adicional1"]["itens"];
+@$_POST["plano_adicional1"]["valor"];
+
+@$_POST["plano_adicional2"]["nome"];
+@$_POST["plano_adicional2"]["codigo"];
+@$_POST["plano_adicional2"]["itens"];
+@$_POST["plano_adicional2"]["valor"];
 
 @$_POST['nome_comprador'] = 'Pedro Henrique da Silva';
 @$_POST['telefone_comprador'] = '123242523623';
@@ -191,18 +195,15 @@ Exemplo de retorno:
 @$_POST['estado_comprador'] = 'MG';
 @$_POST['pais_comprador'] = 'BR';
 
-
 @$_POST['nome_produtor'] = 'Pedro Henrique da Silva';
 @$_POST['telefone_produtor'] = '';
 @$_POST['email_produtor'] = 'pedrohenriquedasilva100@gmail.com';
 @$_POST['cpf_cnpj_produtor'] = '';
 
-
 @$_POST['nome_afiliado'] = 'Pedro Henrique da Silva';
 @$_POST['telefone_afiliado'] = '';
 @$_POST['email_afiliado'] = 'pedro@outlook.com';
 @$_POST['cpf_cnpj_afiliado'] = '12345678901';
-
 
 // CARTÃO DE CRÉDITO, BOLETO, PIX
 @$_POST['forma_pagamento'] = 'BOLETO';
